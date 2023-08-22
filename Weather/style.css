@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,300;1,400;1,500;1,600;1,700;1,900;1,1000&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+
+}
+body{
+    position: relative;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.5;
+}
+.weather{
+    /* background-color: white; */
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 3rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.weather > div{
+    margin: 0.625rem;
+}
+.weather1{
+    font-size: 4rem;
+}
+.weather p{
+    font-size: 2rem;
+}
+.weather span{
+    font-size: 0.75rem;
+}
+.weather3 span{
+    font-size: 1rem;
+    margin: 0.3rem;
+
+}
+.weather3 p img{
+    width: 5rem;
+    height: 5rem;
+}
+nav{
+    height: 100px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.18);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(180, 177, 177,0.075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+nav form{
+    width: 70%;
+    /* background-color: rgba(180, 177, 177,0.075); */
+    grid-template-columns: 5fr 1fr;
+    display: grid;
+
+}
+.searchField{
+    font-size: 1.1rem;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 1rem 0;
+    width: 90%;
+}
+nav form button{
+    background-color: rgb(155, 155, 144);
+    border-radius: 5px 10px;
+    font-size: 1.1rem;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(110 43 89)
+}
+nav form button:hover{
+    background-color:  rgb(94, 35, 75);
+
+    /* outline: auto; */
+    /* border: 0.5px solid black; */
+    color: rgb(236, 235, 234);
+    transition: all 200ms;
+}
+.my-location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    top: 60%;
+}
+.my-loc{
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.18);
+    outline: none;
+    border-bottom: 1px solid black;
+    /* border-left: 1px solid black; */
+    font: smaller;
+    font-family: sans-serif;
+    margin-top: -20px;
+    z-index: 10;
+    font-size: larger;
+    cursor: pointer;
+    /* border-radius: 0 25px 25px 0;
+    border-radius: 7px;
+    font: bold;
+    font-family: sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer; */
+}
+.my-loc:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.30);
+    color: rgb(228, 216, 216);
+    background-color: transparent;
+
+    transition: all 200ms;
+}
